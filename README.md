@@ -35,3 +35,4 @@ All in all, I enjoyed this challenge. I followed the spacing in the mockup as cl
 * run `yarn test`
 
 You can run this to see my one and only test fail! >_<
+I added the --coverage flag to my package.json so it does show coverage report but that is it.
