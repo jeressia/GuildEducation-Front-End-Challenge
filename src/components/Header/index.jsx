@@ -16,12 +16,15 @@ export const Header = () => {
         <img
           className={styles.logo}
           src="https://recess-images.imgix.net/guild_logos/guild/guild_color.svg"
+          alt="guild-logo"
+          data-testId="headerLogo"
         />
       </Link>
       <span
         className={styles.username}
         onClick={() => history.push(`${pathname}?isEditingName=true`)}
         role="button"
+        data-testId="headerText"
       >
         <p>{currentUser ? currentUser.username : 'Pick a username'}</p>
       </span>

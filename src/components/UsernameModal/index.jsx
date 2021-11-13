@@ -6,11 +6,12 @@ import { useHistory, useLocation } from 'react-router';
 import { v4 } from 'uuid';
 
 import { AppContext } from '../../App/context';
+import closeIcon from '../../assets/close-icon.svg';
 import { SocketContext } from '../../socket/context';
 
 import styles from './index.module.scss';
 
-export const UsernameModal= () => {
+export const UsernameModal = () => {
   const { pathname, search } = useLocation();
   const history = useHistory();
   const parsedParams = qs.parse(search, { ignoreQueryPrefix: true });
@@ -38,15 +39,30 @@ export const UsernameModal= () => {
     socket?.emit('username', currentUser);
   };
 
+  const handleCancel = (e) => {
+    e.preventDefault();
+    history.push(`${pathname}`);
+  };
+
   return (
-    <Dialog
+    <Dialog className={styles.modal}
       aria-label="Username input"
       isOpen={Boolean(parsedParams.isEditingName) || false}
       onDismiss={() => history.push(`${pathname}`)}
     >
+      <div className={styles.modalCloseButton}>
+        <button onClick={handleCancel}>
+          <span><img src={closeIcon} alt="close button for modal" /></span>
+        </button>
+      </div>
       <form className={styles.formControl} onSubmit={handleSubmit}>
-        <label htmlFor="username">Edit your name</label>
+        <div className={styles.modalHeaderText}>
+          <h1>Enter Your Name</h1>
+          <p className={styles.modalSubtext}>Edit how your name displays when others chat with you.</p>
+        </div>
+        <label className={styles.modalLabel} htmlFor="username">Name</label>
         <input
+          className={styles.modalTextInput}
           aria-label="Edit your name"
           type="text"
           name="username"
@@ -55,7 +71,10 @@ export const UsernameModal= () => {
           value={currentUser ? currentUser.username : ''}
           placeholder="Enter your name"
         />
-        <input type="submit" value="submit" />
+        <div className={styles.modalButtons}>
+          <input type="submit" value="Cancel" onSubmit={handleCancel} />
+          <input type="submit" value="Save" />
+        </div>
       </form>
     </Dialog>
   );

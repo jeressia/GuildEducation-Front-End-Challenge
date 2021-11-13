@@ -17,8 +17,8 @@ export const ChatViewHeader = () => {
   if (!conversation) {
     return (
       <div>
-        <p>
-          uh oh, we couldn&apost find a conversation with id: ${conversationId}
+        <p className={styles.errorText}>
+          {'uh oh, we couldn\'t find a conversation with id: 1'}
         </p>
       </div>
     );
@@ -31,7 +31,7 @@ export const ChatViewHeader = () => {
   if (!viewedUser) {
     return (
       <div>
-        <p>uh oh, we couldn&apost find another user for this conversation</p>
+        <p className={styles.errorText}>uh oh, we couldn&apost find another user for this conversation</p>
       </div>
     );
   }
