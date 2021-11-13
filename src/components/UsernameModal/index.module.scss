@@ -1,4 +1,76 @@
-.formControl {
+@import "../../styles/variables";
+
+
+.modal{
+  border-radius: 5px;
+  width:45%;
+  padding-top:40px;
+}
+
+.modalCloseButton{
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+
+  button{
+    background: none;
+    border: none;
+
+  }
+}
+
+  .modalSubtext, .modalLabel{
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    color: $guild-med-gray;
+    letter-spacing: .5px;
+    margin-top:5px;
+  }
+
+  .modalLabel{
+    font-size: 16px;
+    color:$guild-dark-gray;
+    margin-bottom: 2px;
+  }
+
+  .formControl {
+    display: flex;
+    flex-direction: column;
+
+  .modalTextInput{
+    height: 40px;
+    width: 75%;
+    padding-left: 10px;
+    margin-bottom: 50px;
+    border-radius: 2px;
+    border: 1px solid $guild-dark-gray;
+    font-family: 'Nunito Sans';
+    color: #000;
+    font-size: 16px;
+  }
+
+  .modalButtons{
+    display: flex;
+    justify-content: flex-end;
+
+    input{
+      margin:10px;
+      height: 45px;
+      padding: 0 20px;
+      border-radius: 5px;
+      letter-spacing: 1.5px;
+    }
+
+    input[value="Cancel"]{
+      background-color: #ffffff;
+      border: 2px solid;
+      color: $guild-teal;
+      width: 100px;
+    }
+
+    input[value="Save"]{
+      background-color: $guild-teal;
+      border: none;
+      color: #ffffff;
+    }
+  }
 }

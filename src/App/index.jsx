@@ -13,6 +13,8 @@ import { SocketContext } from '../socket/context';
 import { AppContext } from './context';
 import styles from './index.module.scss';
 
+import '../styles/global.scss';
+
 
 
 const socketPort = process.env.SOCKET_PORT || 3001;
