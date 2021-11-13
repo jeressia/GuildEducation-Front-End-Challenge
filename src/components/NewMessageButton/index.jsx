@@ -10,7 +10,7 @@ export const NewMessageButton = () => (
       <span className={styles.buttonText}>
          New message 
       </span>
-      <span className="material-icons-outlined">
+      <span>
         <img className={styles.editIcon} src={editIcon} alt="edit-icon"/>
       </span>
     </button>

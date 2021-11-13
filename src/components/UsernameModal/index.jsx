@@ -52,12 +52,14 @@ export const UsernameModal = () => {
     >
       <div className={styles.modalCloseButton}>
         <button onClick={handleCancel}>
-          <span><img src={closeIcon} alt="close button for modal"/></span>
+          <span><img src={closeIcon} alt="close button for modal" /></span>
         </button>
       </div>
       <form className={styles.formControl} onSubmit={handleSubmit}>
-        <h1>Enter Your Name</h1>
-        <p className={styles.modalSubtext}>Edit how your name displays when others chat with you.</p>
+        <div className={styles.modalHeaderText}>
+          <h1>Enter Your Name</h1>
+          <p className={styles.modalSubtext}>Edit how your name displays when others chat with you.</p>
+        </div>
         <label className={styles.modalLabel} htmlFor="username">Name</label>
         <input
           className={styles.modalTextInput}

@@ -4,13 +4,16 @@
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-column-gap: 40px;
-  padding:32px 80px 0 40px;
 
+  
   .header{
     grid-column: 1 / 9;
+    height: 250px;
+    padding: 32px;
+    margin: 0 !important;
 
     .selectSubtext{
-      margin-top: 5px;
+      margin-top: 5px 0;
       font-weight: normal;
       }
 
@@ -30,11 +33,15 @@
         .selectUser{
           margin-top: 5px;
           height: 40px;
-          padding: 0px 6px;
+          padding-left: 10px;
           font-family: 'Nunito Sans';
           color:$guild-med-gray;
           font-size:16px;
           width: 125px;
+          appearance: none;
+          background-image: url('../../assets/down-arrow.svg');
+          background-repeat: no-repeat;
+          background-position: 100px 15px;
         }
       }
 

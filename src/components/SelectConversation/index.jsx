@@ -10,7 +10,7 @@ export const SelectConversation = () => {
   // const { socket } = useContext(SocketContext);
   // const { currentUser } = useContext(AppContext);
   const [selectedUser, setSelectedUser] = useState();
-  const users = [{userId: 1, username: 'Jeressia Williamson'},{userId: 2, username: 'Elliot Jones'}, {userId: 3, username: 'Allison Nickels'}];
+  const users = [{ userId: 1, username: 'Jeressia' }, { userId: 2, username: 'Elliot' }, { userId: 3, username: 'Allison' }];
 
   const subtextClasses = `largeLight ${styles.selectSubtext}`;
 
@@ -53,7 +53,7 @@ export const SelectConversation = () => {
           </div>
           <input
             disabled={!selectedUser}
-            type="submit"
+            type="button"
             className={styles.submitSelectUser}
             value="Start conversation"
           />

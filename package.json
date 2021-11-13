@@ -64,6 +64,6 @@
     "lint:script": "eslint --ext js --ext jsx src",
     "lint:staged:script": "eslint --fix",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test --coverage"
   }
 }

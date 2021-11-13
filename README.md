@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Summary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I spent about 3 hours on this challenge. A huge majority of that time was spent researching things I was unfamiliar with like socket.io and testing using jest vs cypress. In the end, I decided it would be best to just style as much as I could to have a fair representation of the amount of work I could do in 3 hours.
+
+1. I spent a lot of time trying to figure out how to run socket.io so that I could simulate a conversation. I understood that the assignment was to redesign the front end, but in some of the mockups, I saw there was an actual conversation taking place. In my mind, that meant I needed to create a conversation and style those screens as well. After speaking with the recruiter, she confirmed that I did not need to create my own data. I was able to move past researching this.
+2. Grid. I spent a while looking at videos to make sure I was creating my grid properly. I like that the elements on the page became responsive by default. I was able to resize the screen and the elements still only took up the specified grid columns or they moved to the next line.
+3. Material Icons! I could not get the icons to work using the tag on the page. The instructions said to import the font as usual, but when I went to search for the font, it said the font was not there. I used the svgs instead and changed the fill path to match the right colors.
+4. Importing style modules was new to me but that took no time to figure out. I’m used to using styled components but I wanted to implement the modules to follow the format of the other files.
+5. Testing -  I did not include test coverage. After researching, I tried to implement what I had seen on Jest tutorials and my test kept failing. I do intend to learn more about testing in React—I’d only ever conducted unit tests in C# prior to this. I did not want to take too much more time from other aspects of the challenge to write out all the tests.
+
+All in all, I enjoyed this challenge. I followed the spacing in the mockup as closely as I could. The design looks good on desktop and tablet. I like that there are new things that I will have in my coding toolbox for the future like style modules and grid (and eventually testing once I learn better ways to implement them!)
 
 ## Available Scripts
 
@@ -11,60 +19,7 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Launches the test runner in the interactive watch mode. You can run this to see my one and only test fail! lol

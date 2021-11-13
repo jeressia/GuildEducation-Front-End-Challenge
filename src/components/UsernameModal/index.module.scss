@@ -1,76 +1,84 @@
 @import "../../styles/variables";
 
-
-.modal{
+.modal {
+  position: relative;
   border-radius: 5px;
-  width:45%;
-  padding-top:40px;
-}
+  width: 50%;
+  padding: 32px;
 
-.modalCloseButton{
-  display: flex;
-  justify-content: flex-end;
+  .modalCloseButton {
+    position: absolute;
+    right: 12px;
+    top: 18px;
 
-  button{
-    background: none;
-    border: none;
-
+    button {
+      background: none;
+      border: none;
+    }
   }
-}
 
-  .modalSubtext, .modalLabel{
-    font-family: 'Nunito Sans';
+  .modalSubtext,
+  .modalLabel {
+    font-family: "Nunito Sans";
     font-size: 18px;
     color: $guild-med-gray;
-    letter-spacing: .5px;
-    margin-top:5px;
+    letter-spacing: 0.5px;
+    margin: 0;
+  
   }
 
-  .modalLabel{
+  .modalLabel {
     font-size: 16px;
-    color:$guild-dark-gray;
-    margin-bottom: 2px;
+    color: $guild-dark-gray;
+    margin: 0 0 2px 0;
   }
 
   .formControl {
     display: flex;
     flex-direction: column;
 
-  .modalTextInput{
-    height: 40px;
-    width: 75%;
-    padding-left: 10px;
-    margin-bottom: 50px;
-    border-radius: 2px;
-    border: 1px solid $guild-dark-gray;
-    font-family: 'Nunito Sans';
-    color: #000;
-    font-size: 16px;
-  }
-
-  .modalButtons{
-    display: flex;
-    justify-content: flex-end;
-
-    input{
-      margin:10px;
-      height: 45px;
-      padding: 0 20px;
-      border-radius: 5px;
-      letter-spacing: 1.5px;
+    .modalHeaderText {
+      margin-bottom: 32px;
     }
 
-    input[value="Cancel"]{
-      background-color: #ffffff;
-      border: 2px solid;
-      color: $guild-teal;
-      width: 100px;
+    .modalTextInput {
+      height: 40px;
+      width: 75%;
+      padding-left: 10px;
+      margin-bottom: 80px;
+      border-radius: 2px;
+      border: 1px solid $guild-dark-gray;
+      font-family: "Nunito Sans";
+      color: #000;
+      font-size: 16px;
     }
 
-    input[value="Save"]{
-      background-color: $guild-teal;
-      border: none;
-      color: #ffffff;
+    .modalButtons {
+      display: flex;
+      justify-content: flex-end;
+
+      input {
+        margin: 10px;
+        height: 45px;
+        padding: 0 24px;
+        border-radius: 5px;
+        letter-spacing: 1.5px;
+      }
+
+      input[value="Cancel"] {
+        background-color: #ffffff;
+        border: 2px solid;
+        color: $guild-teal;
+        width: 100px;
+        margin: 0 12px 0 0;
+      }
+
+      input[value="Save"] {
+        background-color: $guild-teal;
+        border: none;
+        color: #ffffff;
+        margin: 0 0 0 12px;
+      }
     }
   }
 }
