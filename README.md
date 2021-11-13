@@ -25,13 +25,13 @@ All in all, I enjoyed this challenge. I followed the spacing in the mockup as cl
 <img width="383" alt="Screen Shot 2021-11-13 at 12 09 10 PM" src="https://user-images.githubusercontent.com/43094838/141654653-ff239f0a-0020-48e4-b78c-4fbc3bb7f468.png">
 
 ## To run this:
--git clone this repo
--npm install
--run `yarn start`
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*git clone this repo
+*npm install
+*run `yarn start`
+*Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ## To test this run:
--run `yarn test`
+*run `yarn test`
 
 You can run this to see my one and only test fail! >_<
