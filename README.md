@@ -10,16 +10,21 @@ I spent about 3 hours on this challenge. A huge majority of that time was spent 
 
 All in all, I enjoyed this challenge. I followed the spacing in the mockup as closely as I could. The design looks good on desktop and tablet. I like that there are new things that I will have in my coding toolbox for the future like style modules and grid (and eventually testing once I learn better ways to implement them!)
 
-## Available Scripts
+## Screenshots
+<img width="1275" alt="Jeressia-Guild-Desktop" src="https://user-images.githubusercontent.com/43094838/141654417-f259bbbb-29ec-49ba-a449-289828e567c0.png">
+Desktop Verson
 
-In the project directory, you can run:
+<img width="380" alt="Jeressia-Guild-IpadPro" src="https://user-images.githubusercontent.com/43094838/141654423-a90e88c7-9ff2-4855-9241-5c986bb6b05f.png">
+Large Tablet Version 1024 x 1366
+<img width="429" alt="Jeressia-Guild-Ipad" src="https://user-images.githubusercontent.com/43094838/141654425-17219390-ab6c-4dd0-946e-1f8ca1ad01ef.png">
+Small Tablet Versiob 768 x 1024
+## To run this run:
 
 ### `yarn start`
-
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
+## To test this run:
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode. You can run this to see my one and only test fail! lol
+You can run this to see my one and only test fail! lol
